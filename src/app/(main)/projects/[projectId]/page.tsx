@@ -17,7 +17,6 @@ export default function ProjectPage({ params }: { params: { projectId: string } 
 
   return (
     <div className="flex h-[calc(100vh-4rem)] flex-col">
-      {/* Project Header */}
       <header className="border-b">
         <div className="flex h-16 items-center justify-between px-6">
           <div className="flex items-center gap-4">
