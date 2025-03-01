@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📋 Kanban Task Manager
 
-## Getting Started
+Una aplicación web moderna para la gestión de proyectos y tareas utilizando el sistema Kanban.
 
-First, run the development server:
+## 🚀 Características Principales
+- Interfaz intuitiva con drag & drop
+- Colaboración en tiempo real
+- Sistema de notificaciones
+- Modo offline
+- Gráficos de progreso y Gantt
+- Gestión de dependencias entre tareas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Plan de Desarrollo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Fase 1: Autenticación y Layout 🔐
+- [ ] Sistema de autenticación completo
+  - Página de Login/Registro con validación
+  - Integración con API (Axios)
+  - Gestión de estado global (`AuthContext`)
+- [ ] Layout responsive
+  - 📑 Sidebar con navegación de proyectos
+  - 👤 Header con perfil y centro de notificaciones
+  - 📊 Área principal adaptativa
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Fase 2: Tablero Kanban 📌
+- [x] `ProjectBoard` con columnas Kanban
+- [ ] Componente `TaskCard` interactivo
+  - Vista previa de información clave
+  - Indicadores de prioridad
+  - Avatares de usuarios asignados
+- [ ] Sistema drag & drop (react-beautiful-dnd)
+- [ ] Integración con API REST
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Fase 3: Gestión de Tareas ✏️
+- [ ] Modal de tareas completo
+  - Editor de información
+  - Sistema de comentarios
+  - Historial de cambios
+- [ ] CRUD completo de tareas
+  - Creación intuitiva
+  - Edición en tiempo real
+  - Eliminación con confirmación
 
-## Learn More
+### Fase 4: Colaboración en Tiempo Real 🔄
+- [ ] Integración Socket.IO
+- [ ] Actualizaciones en tiempo real
+- [ ] Indicadores de presencia
+- [ ] Sistema de bloqueo de edición
 
-To learn more about Next.js, take a look at the following resources:
+### Fase 5: Funciones Intermedias 🎯
+- [ ] Filtros avanzados
+  - Por estado
+  - Por asignación
+  - Por prioridad
+- [ ] Sistema de comentarios
+- [ ] Métricas de progreso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Fase 6: Funciones Avanzadas 💫
+- [ ] Visualización Gantt
+- [ ] Gestión de dependencias
+- [ ] Modo offline
+  - Service Workers
+  - Sincronización IndexedDB
+- [ ] Centro de notificaciones
